@@ -9,7 +9,7 @@ def validocodigo(x):
         return 1
 
 def validoprecio(x):
-    if x.replace('.', '', 1).isdigit():  # Permite un punto decimal solo una vez
+    if x.replace('.', '', 1).isdigit():
         x = float(x)
         if 10 <= x <= 999.99:
             return 0
